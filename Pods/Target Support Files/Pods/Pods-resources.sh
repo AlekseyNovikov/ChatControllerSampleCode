@@ -65,8 +65,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "NYTPhotoViewer/Pod/Assets/ios/NYTPhotoViewerCloseButtonXLandscape@2x.png"
   install_resource "NYTPhotoViewer/Pod/Assets/ios/NYTPhotoViewerCloseButtonXLandscape@3x.png"
   install_resource "NYTPhotoViewer/Pod/Assets/ios"
-  install_resource "SupportKit/SupportKit.bundle"
-  install_resource "VK-ios-sdk/VKSdkResources.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "NYTPhotoViewer/Pod/Assets/ios/NYTPhotoViewerCloseButtonX.png"
@@ -76,8 +74,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "NYTPhotoViewer/Pod/Assets/ios/NYTPhotoViewerCloseButtonXLandscape@2x.png"
   install_resource "NYTPhotoViewer/Pod/Assets/ios/NYTPhotoViewerCloseButtonXLandscape@3x.png"
   install_resource "NYTPhotoViewer/Pod/Assets/ios"
-  install_resource "SupportKit/SupportKit.bundle"
-  install_resource "VK-ios-sdk/VKSdkResources.bundle"
 fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

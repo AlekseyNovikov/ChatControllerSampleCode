@@ -1,63 +1,20 @@
 PODS:
-  - AFNetworking (2.6.3):
-    - AFNetworking/NSURLConnection (= 2.6.3)
-    - AFNetworking/NSURLSession (= 2.6.3)
-    - AFNetworking/Reachability (= 2.6.3)
-    - AFNetworking/Security (= 2.6.3)
-    - AFNetworking/Serialization (= 2.6.3)
-    - AFNetworking/UIKit (= 2.6.3)
-  - AFNetworking/NSURLConnection (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.3)
-  - AFNetworking/Security (2.6.3)
-  - AFNetworking/Serialization (2.6.3)
-  - AFNetworking/UIKit (2.6.3):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
-  - AMWaveTransition (0.6.2)
   - EasyMapping (0.15.4):
     - EasyMapping/Core (= 0.15.4)
   - EasyMapping/Core (0.15.4)
-  - Masonry (0.6.3)
   - NYTPhotoViewer (0.1.2)
-  - ObjectiveLuhn (1.0.2)
   - Realm (0.96.3):
     - Realm/Headers (= 0.96.3)
   - Realm/Headers (0.96.3)
-  - SDWebImage (3.7.3):
-    - SDWebImage/Core (= 3.7.3)
-  - SDWebImage/Core (3.7.3)
-  - SupportKit (2.11.1)
-  - VK-ios-sdk (1.2.2)
 
 DEPENDENCIES:
-  - AFNetworking (= 2.6.3)
-  - AMWaveTransition
   - EasyMapping (~> 0.15.0)
-  - Masonry
   - NYTPhotoViewer
-  - ObjectiveLuhn
   - Realm
-  - SDWebImage
-  - SupportKit
-  - VK-ios-sdk (= 1.2.2)
 
 SPEC CHECKSUMS:
-  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  AMWaveTransition: 98952310574779e4ca7e7f4d89f8b1043cdad171
   EasyMapping: e1f5942b26e1f5ae7129032117721a2972844f2f
-  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   NYTPhotoViewer: 874a57dd833238b52ab2e8d1c827356c763626c3
-  ObjectiveLuhn: 7ffbe89856145a65f60ce1fa0f928ce95fdb9509
   Realm: 145d3cdf78a03aee71bde5381ad7e542bd541720
-  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
-  SupportKit: 3372cf5d6090de7bd035bee21589b0efb9016fd6
-  VK-ios-sdk: f4b7df0d4e277e06d60fef6dc472be4260eeda6d
 
 COCOAPODS: 0.39.0

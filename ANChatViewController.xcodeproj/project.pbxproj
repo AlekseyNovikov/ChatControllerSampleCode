@@ -232,6 +232,7 @@
 		5BBFC5211C209DD700B11613 /* MDAPIKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDAPIKeys.h; path = Managers/Network/MDAPIKeys.h; sourceTree = "<group>"; };
 		5BBFC5221C209E2600B11613 /* PhoneFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneFormatter.h; sourceTree = "<group>"; };
 		5BBFC5231C209E2600B11613 /* PhoneFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneFormatter.m; sourceTree = "<group>"; };
+		5BBFC5251C20B20600B11613 /* ANChatViewController.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANChatViewController.pch; sourceTree = "<group>"; };
 		8AB050338B64138C29F4834A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B05832C73B824586BAE2E598 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -317,6 +318,7 @@
 		5B0E4BCD1C1CBC1600892D3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5BBFC5251C20B20600B11613 /* ANChatViewController.pch */,
 				5B6CC7361C2015F4004C276D /* Messages.json */,
 				5B0E4BCE1C1CBC1600892D3C /* main.m */,
 			);
