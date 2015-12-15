@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9059"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vxg-8t-VZX" customClass="MDRegistrationButtonsInputView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZC-eW-F9P" customClass="MDGroupOfButtons">
+                    <rect key="frame" x="8" y="58" width="304" height="100"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="304" id="7Br-2N-mYf"/>
+                        <constraint firstAttribute="height" priority="750" constant="100" id="wCK-93-KHV"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="numberOfButtons">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonHeight">
+                            <real key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wZC-eW-F9P" firstAttribute="centerY" secondItem="vxg-8t-VZX" secondAttribute="centerY" id="9on-er-xlE"/>
+                <constraint firstItem="wZC-eW-F9P" firstAttribute="centerX" secondItem="vxg-8t-VZX" secondAttribute="centerX" id="PKr-zg-33C"/>
+                <constraint firstAttribute="bottom" secondItem="wZC-eW-F9P" secondAttribute="bottom" priority="749" constant="58" id="Yv1-H0-AO9"/>
+                <constraint firstItem="wZC-eW-F9P" firstAttribute="top" secondItem="vxg-8t-VZX" secondAttribute="top" priority="749" constant="58" id="dd4-B2-zJQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttonsView" destination="wZC-eW-F9P" id="Tgd-Zb-Gax"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="167"/>
+        </view>
+    </objects>
+</document>

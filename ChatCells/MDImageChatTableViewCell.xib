@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="217" id="r3g-JX-aiL" customClass="MDImageChatTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r3g-JX-aiL" id="0e8-7G-W1i">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="216.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q7x-6g-1IY">
+                        <rect key="frame" x="45" y="12" width="267" height="200.5"/>
+                        <animations/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 cентября, 17:19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vr-07-tIs" userLabel="DateTimeLabel">
+                        <rect key="frame" x="110" y="10" width="99.5" height="15.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Доставлено" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4g-tO-drJ" userLabel="StatusLabel">
+                        <rect key="frame" x="295" y="188.5" width="63" height="15.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Q7x-6g-1IY" secondAttribute="trailing" constant="8" id="0bv-Ny-P2u"/>
+                    <constraint firstAttribute="bottom" secondItem="Q7x-6g-1IY" secondAttribute="bottom" constant="4" id="57S-ZK-ycU"/>
+                    <constraint firstItem="Q7x-6g-1IY" firstAttribute="leading" secondItem="0e8-7G-W1i" secondAttribute="leading" constant="45" id="5eC-iS-Hhe"/>
+                    <constraint firstItem="4Vr-07-tIs" firstAttribute="top" secondItem="0e8-7G-W1i" secondAttribute="top" constant="10" id="9ug-EF-zXx"/>
+                    <constraint firstItem="Z4g-tO-drJ" firstAttribute="trailing" secondItem="Q7x-6g-1IY" secondAttribute="trailing" constant="46" id="PXV-xM-SkJ"/>
+                    <constraint firstItem="4Vr-07-tIs" firstAttribute="centerX" secondItem="0e8-7G-W1i" secondAttribute="centerX" id="c7f-iX-0N9"/>
+                    <constraint firstItem="Z4g-tO-drJ" firstAttribute="top" secondItem="Q7x-6g-1IY" secondAttribute="bottom" constant="-24" id="esj-tx-1gM"/>
+                    <constraint firstItem="Q7x-6g-1IY" firstAttribute="top" secondItem="0e8-7G-W1i" secondAttribute="top" constant="12" id="pXc-GG-vp5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="attachmentImageView" destination="Q7x-6g-1IY" id="gHF-YX-ao0"/>
+                <outlet property="bottomBubleConstaint" destination="57S-ZK-ycU" id="fMr-a4-QDT"/>
+                <outlet property="dateTimeLabel" destination="4Vr-07-tIs" id="HZS-EB-pGf"/>
+                <outlet property="leadingBubleConstraint" destination="0bv-Ny-P2u" id="iy0-Ra-g1k"/>
+                <outlet property="statusLabel" destination="Z4g-tO-drJ" id="7KH-pl-aUu"/>
+                <outlet property="topBubleConstraint" destination="pXc-GG-vp5" id="Brx-e9-Ypm"/>
+                <outlet property="topStatusLabelConstraint" destination="esj-tx-1gM" id="Mvu-jA-bM0"/>
+                <outlet property="trailingBubleConstraint" destination="5eC-iS-Hhe" id="1gT-QQ-8wP"/>
+                <outlet property="trailingStatusLabelConstraint" destination="PXV-xM-SkJ" id="Z1u-Z8-WLz"/>
+            </connections>
+            <point key="canvasLocation" x="441" y="373.5"/>
+        </tableViewCell>
+    </objects>
+</document>

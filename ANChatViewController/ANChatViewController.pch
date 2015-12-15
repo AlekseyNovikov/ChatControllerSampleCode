@@ -1,0 +1,30 @@
+//
+//  ANChatViewController.pch
+//  
+//
+//  Created by Aleksey Novikov on 15/12/15.
+//
+//
+
+#ifndef ANChatViewController_pch
+#define ANChatViewController_pch
+
+
+#import <UIKit/UIKit.h>
+
+#import <EasyMapping/EasyMapping.h>
+#import <Realm/Realm.h>
+#import <SDWebImage/SDImageCache.h>
+
+#import "NSThread+SJGAdditional.h"
+#import "UIColor+MDApplicationColors.h"
+#import "UIFont+MDApplicationFonts.h"
+#import "UIImage+ColorImage.h"
+#import "UIImage+MDBubbleImage.h"
+#import "MDAPIKeys.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ANChatViewController_pch */

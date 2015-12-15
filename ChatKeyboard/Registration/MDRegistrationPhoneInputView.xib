@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oGZ-rr-DOY" customClass="MDRegistrationPhoneInputView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4j-Y9-V7m">
+                    <rect key="frame" x="10" y="0.0" width="325" height="40"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NO4-FL-mkw">
+                    <rect key="frame" x="335" y="0.0" width="40" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="28I-dZ-tSO"/>
+                    </constraints>
+                    <state key="normal" image="action-send-normal"/>
+                    <state key="highlighted" image="action-send-highlighted"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhC-RR-Rep">
+                    <rect key="frame" x="334" y="0.0" width="1" height="40"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="aqT-ln-H0t"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NO4-FL-mkw" firstAttribute="leading" secondItem="yhC-RR-Rep" secondAttribute="trailing" id="1JH-T7-0Of"/>
+                <constraint firstItem="n4j-Y9-V7m" firstAttribute="top" secondItem="oGZ-rr-DOY" secondAttribute="top" id="7wc-Zg-rcx"/>
+                <constraint firstAttribute="bottom" secondItem="n4j-Y9-V7m" secondAttribute="bottom" id="7wm-QC-0yI"/>
+                <constraint firstItem="NO4-FL-mkw" firstAttribute="top" secondItem="oGZ-rr-DOY" secondAttribute="top" id="RZx-Bo-43P"/>
+                <constraint firstItem="yhC-RR-Rep" firstAttribute="top" secondItem="oGZ-rr-DOY" secondAttribute="top" id="Wre-Ke-YTf"/>
+                <constraint firstItem="NO4-FL-mkw" firstAttribute="leading" secondItem="n4j-Y9-V7m" secondAttribute="trailing" id="XzK-dv-3Uv"/>
+                <constraint firstAttribute="bottom" secondItem="NO4-FL-mkw" secondAttribute="bottom" id="bUW-M3-H6U"/>
+                <constraint firstAttribute="trailing" secondItem="NO4-FL-mkw" secondAttribute="trailing" id="kdn-ET-nEH"/>
+                <constraint firstItem="n4j-Y9-V7m" firstAttribute="leading" secondItem="oGZ-rr-DOY" secondAttribute="leading" constant="10" id="pZA-UG-q5H"/>
+                <constraint firstAttribute="bottom" secondItem="yhC-RR-Rep" secondAttribute="bottom" id="xCp-ob-Ma9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sendButton" destination="NO4-FL-mkw" id="vg3-cl-1BN"/>
+                <outlet property="textField" destination="n4j-Y9-V7m" id="xkd-fw-4gy"/>
+            </connections>
+            <point key="canvasLocation" x="498.5" y="324"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="action-send-highlighted" width="22" height="23"/>
+        <image name="action-send-normal" width="22" height="23"/>
+    </resources>
+</document>

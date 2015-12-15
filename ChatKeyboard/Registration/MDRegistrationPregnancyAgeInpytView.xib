@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bUq-3H-O96" customClass="MDRegistrationPregnancyAgeInputView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите неделю:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RG6-oS-33q">
+                    <rect key="frame" x="88" y="30" width="144.5" height="22"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                    <color key="textColor" red="0.17254901960784313" green="0.24313725490196078" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyj-4E-qwy">
+                    <rect key="frame" x="8" y="158" width="304" height="50"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="BLZ-GZ-ubq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                    <state key="normal" title="Далее">
+                        <color key="titleColor" red="0.17254901960784313" green="0.24313725490196078" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7e-uN-60Z" customClass="PickerCollectionView">
+                    <rect key="frame" x="0.0" y="63" width="320" height="90"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="ycY-AP-cHA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="c7e-uN-60Z" secondAttribute="trailing" id="CBx-l0-3kS"/>
+                <constraint firstAttribute="trailing" secondItem="Xyj-4E-qwy" secondAttribute="trailing" constant="8" id="IDE-eK-POR"/>
+                <constraint firstItem="c7e-uN-60Z" firstAttribute="leading" secondItem="bUq-3H-O96" secondAttribute="leading" id="VZO-LV-klp"/>
+                <constraint firstItem="c7e-uN-60Z" firstAttribute="centerY" secondItem="bUq-3H-O96" secondAttribute="centerY" id="fNM-gU-3xZ"/>
+                <constraint firstItem="Xyj-4E-qwy" firstAttribute="leading" secondItem="bUq-3H-O96" secondAttribute="leading" constant="8" id="gG0-cT-GCr"/>
+                <constraint firstAttribute="bottom" secondItem="Xyj-4E-qwy" secondAttribute="bottom" constant="8" id="kvL-rE-qmW"/>
+                <constraint firstItem="RG6-oS-33q" firstAttribute="centerX" secondItem="bUq-3H-O96" secondAttribute="centerX" id="vda-Xv-EuV"/>
+                <constraint firstItem="RG6-oS-33q" firstAttribute="top" secondItem="bUq-3H-O96" secondAttribute="top" constant="30" id="wJ2-dg-Vw8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nextButton" destination="Xyj-4E-qwy" id="9Hh-Cv-rVh"/>
+                <outlet property="pickerCollectionView" destination="c7e-uN-60Z" id="RmS-nJ-aUv"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="260"/>
+        </view>
+    </objects>
+</document>
